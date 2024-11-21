@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - E-Commerce Website</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html" class="cart-link">
+                <i class="fa fa-shopping-cart" style="padding-right: 2px;"></i>
+                <span id="cart-count" class="cart-count-badge">0</span>
+                Shopping Cart
+            </a>   
+            <a href="contact.html">Contact Us</a>
+            <a href="profile.html"><i class="far fa-user" style="padding-right: 2px;"></i>Profile</a>
+        </nav>
+    </header>
+    <main>
+        <center><h1>Your Cart</h1></center>
+        <div id="cartTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Product Name</th>
+                        <th>Image</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody id="cartItem">
+                </tbody>
+            </table> 
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

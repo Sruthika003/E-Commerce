@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - E-Commerce Website</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html" class="cart-link">
+                <i class="fa fa-shopping-cart" style="padding-right: 2px;"></i>
+                <span id="cart-count" class="cart-count-badge">0</span>
+                Shopping Cart
+            </a>            
+            <a href="contact.html">Contact Us</a>
+            <a href="profile.html"><i class="far fa-user" style="padding-right: 2px;"></i>Profile</a>
+        </nav>
+    </header>
+    <main>
+        <center><h1>Our Products</h1></center>
+        <div id="products-container"></div>
+        <template id="products-item-template">
+            <div class="product-item">
+                <h2 class="product-title"></h2>
+                <img class="product-image" src="" alt="">
+                <p class="product-description" style="max-lines:2 ;"></p>
+                <p class="product-price"></p>
+                <div  id="cartButton">
+                <button class="addToCart">Add to Cart</button>
+            </div>
+            </div>
+        </template>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
